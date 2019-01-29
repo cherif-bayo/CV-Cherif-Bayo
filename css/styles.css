@@ -3,3 +3,16 @@
 html,body,h1,h2,h3,h4,h5,h6 {
   font-family: "Roboto", sans-serif
 }
+
+#contentpage{
+  display: flex;
+}
+.hidden{
+  display: none;
+}
+#htmlBal, #jqueryBal, #phpBal, #phpLaravelBal, #sqlBal{
+  cursor: pointer;
+}
+.anglais{
+  font-size: 1.5em;
+}
