@@ -9,8 +9,17 @@
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
 
 <body class="w3-light-grey">
@@ -33,7 +42,7 @@
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>bayo.mcherif@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>+33 783767441</p>
           <hr>
-          <p class="w3-large"><b><i class="fa fa-laptop fa-fw w3-margin-right w3-text-blue"></i><i class="fa fa-wrench fa-fw w3-margin-right w3-text-blue"></i>Technologies</b></p>
+          <p class="technologies"><b><i class="fas fa-tools fa-fw w3-text-blue"></i><i class="fa fa-laptop w3-margin-right fa-fw w3-text-blue"></i>Technologies</b></p>
 
 				  <div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="move()"  id="htmlBal">
 				    <p>HTML5 & CSS3</p>
@@ -82,9 +91,18 @@
 	            </div>
 						</div>
 				  </div>
+					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveVue()"  id="vueBal">
+				    <p>Vue.JS</p>
+						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+						<div class="w3-light-grey hidden"  id="connaissanceVue">
+							<div id="myBarVue" class="w3-container w3-center w3-round-xlarge w3-red">
+	              <div class="w3-center w3-text-white">10%</div>
+	            </div>
+						</div>
+				  </div>
           <br>
 
-          <p class="w3-large w3-text-theme anglais"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Langues</b></p>
+          <p class=" w3-text-theme langues"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Langues</b></p>
           <p class="anglais">Anglais</p>
 						<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
 	            <div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:70%">Ecrit</div>
@@ -100,25 +118,14 @@
 							<div class="w3-light-grey w3-round-xlarge">
 								<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:35%">Parler</div>
 							</div>
-
-					<p class="w3-large w3-text-theme"><b><i class="fas fa-globe-africa fa-fw w3-margin-right w3-text-blue"></i>Dialectes</b></p>
-
-					<p class="anglais">Poular</p>
-						<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
-							<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:80%">Ecrit</div>
-						</div>
-						<div class="w3-light-grey w3-round-xlarge">
-							<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:85%">Parler</div>
-						</div>
-
-						<p class="anglais">Soussou</p>
-							<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
-								<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:85%">Ecrit</div>
-							</div>
-							<div class="w3-light-grey w3-round-xlarge">
-								<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:90%">Parler</div>
-							</div>
           <br>
+					<p class=" w3-text-theme langues"><b><i class="fas fa-thumbs-up fa-fw w3-margin-right w3-text-blue"></i>Loisirs</b></p>
+					<p class="voyagebal"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i  class="fas fa-plane-departure fa-fw 	w3-margin-right w3-text-blue"></i>
+						<span title="Pays & villes" data-toggle="popover" data-trigger="hover" data-content="USA(New York - Miami - Washington -Philadelphie - Newark). Pologne - Allemagne - Pays-bas - Luxembourg " class=" w3-display-container voyage">Voyager
+
+						</span></p>
+					<p class="natation"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i class="fas fa-swimmer fa-fw w3-margin-right w3-text-blue"></i> Natation</p>
+					<p class="football"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i class="fas fa-futbol fa-fw w3-margin-right w3-text-blue"></i> Football</p>
         </div>
       </div><br>
 
@@ -131,9 +138,9 @@
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Expériences professionnelles</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b>Apprenti Développeur Web & Web Mobile / Home worker</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2018 - <span class="w3-tag w3-blue w3-round">Aujourd'hui</span></h6>
+          <p>Développement des </p>
           <hr>
         </div>
         <div class="w3-container">
@@ -150,28 +157,28 @@
       </div>
 
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Formation</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
+          <h5 class="w3-opacity"><b>Autodidacte</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-blue w3-round">Juin 2017 - Toujours</span></h6>
+          <p></p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
+          <h5 class="w3-opacity"><b>Développeur web & web mobile / O'clock</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fev 2018 - Juil 2018</h6>
+          <p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Certification titre professionnelle Niveau 3 équivalent Bac + 2<i class="fa fa-spinner w3-spin fa-fw w3-margin-left w3-xxlarge w3-text-blue"></i> <span class="w3-tag w3-blue w3-round">15 Mars 2019 ?</span></p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
+          <h5 class="w3-opacity"><b>Ressources Humaines / Université de lorraine</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2013</h6>
+          <p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Master</p><br>
         </div>
       </div>
 
 			<div class="w3-container w3-card w3-white ">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-spinner fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> Projet en cours</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-spinner w3-spin fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> Projet en cours</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
@@ -203,20 +210,39 @@
 
 <footer class="w3-container w3-blue w3-center w3-margin-top">
   <p>Retrouvez moi sur les réseaux sociaux</p>
-  <a href="#"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge"></i></a>
-  <a href="#"><i class="fa fa-instagram w3-hover-opacity w3-xlarge"></i></a>
-  <a href="#"><i class="fa fa-snapchat w3-hover-opacity w3-xlarge"></i></a>
-  <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity w3-xlarge"></i></a>
-  <a href="#"><i class="fa fa-twitter w3-hover-opacity w3-xlarge"></i></a>
-  <a href="#"><i class="fa fa-linkedin w3-hover-opacity w3-xlarge"></i></a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-facebook-official w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+	<div id="id01" class="w3-modal">
+	 <div class="w3-modal-content w3-animate-zoom w3-card-4">
+		 <header class="w3-container w3-blue">
+			 <span onclick="document.getElementById('id01').style.display='none'"
+			 class="w3-button w3-display-topright">&times;</span>
+			 <h2>You are curious !!!</h2>
+		 </header>
+		 <div class="w3-container">
+			 <p class="w3-text-black">That's great but nothing important to see on my facebook page !! </p>
+			 <p class="w3-text-black">
+				 <i class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+				 <i class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+				 <i class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+			 </p>
+		 </div>
+		 <footer class="w3-container w3-blue">
+			 <p>See you on Twitter or linkedin </p>
+		 </footer>
+	 </div>
+ </div>
+</div>
+  <a href="#"><i class="fa fa-instagram  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+  <a href="#"><i class="fa fa-snapchat  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+  <a href="#"><i class="fa fa-twitter  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+  <a href="https://www.linkedin.com/in/mohamed-cherif-bayo-2084a9153" target="_blank"><i class="fa fa-linkedin  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
   <p>&copy; Cherif BayoDev. All rights reserved. </p>
 </footer>
 
 <script type="text/javascript" src="js/app.js">
 
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
 <script>
 function move() {
   var elem = document.getElementById("myBar");
@@ -285,6 +311,21 @@ function moveSql() {
   var id = setInterval(frame, 10);
   function frame() {
     if (width >= 55) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+<script>
+function moveVue() {
+  var elem = document.getElementById("myBarVue");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 10) {
       clearInterval(id);
     } else {
       width++;
