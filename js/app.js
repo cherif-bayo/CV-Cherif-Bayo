@@ -11,6 +11,10 @@ var app = {
     $('.memoryFE').on('click', app.toggleCarret);
     $('.echequierFE').on('click', app.toggleCarretEchequier);
     $('.boutiqueFE').on('click', app.toggleCarretBoutique);
+    $('.todolistFS').on('click', app.toggleCarretTodolist);
+    $('.oquizFS').on('click', app.toggleCarretOquiz);
+    $('.partageFS').on('click', app.toggleCarretPartage);
+
   },
 
   hideHtmlBal: function(){
@@ -46,5 +50,23 @@ var app = {
     $('.boutiqueD').toggle();
     $('.boutiqueU').toggle();
   },
+  toggleCarretTodolist: function(){
+    // console.log('change moi');
+    $('.todolistD').toggle();
+    $('.todolistU').toggle();
+  },
+  toggleCarretOquiz: function(){
+    // console.log('change moi');
+    $('.oquizD').toggle();
+    $('.oquizU').toggle();
+  },
+  toggleCarretPartage: function(){
+    // console.log('change moi');
+    $('.partageD').toggle();
+    $('.partageU').toggle();
+  },
+
+
+
 };
 $(app.init);
