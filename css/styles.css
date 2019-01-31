@@ -20,7 +20,7 @@ html,body,h1,h2,h3,h4,h5,h6 {
   background-color: #1F83F9;
   padding: .6em.8em;
   border-radius: 8px;
-  transition: all 1s ease-out;
+
 }
 .voyage:hover{
   color: #1F83F9;
@@ -29,4 +29,106 @@ html,body,h1,h2,h3,h4,h5,h6 {
 }
 .efs{
   text-transform: uppercase;
+}
+
+/******** Memory Jeu *******/
+
+#containerMemory {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 5px;
+  perspective: 800px;
+}
+
+.menuMemory {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1em 0;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0;
+}
+
+.menuMemory button {
+	margin: 0.5em;
+	padding: 0.5em;
+	font-size: 1em;
+	font-weight: bold;
+	width: 8em;
+	background-color: #fff;
+  color: #1F83F9;
+	border-radius: 0.5em;
+	outline: none;
+	cursor: pointer;
+  transition: all 1s ease-out;
+}
+.menuMemory button:hover {
+	margin: 0.5em;
+	padding: 0.5em;
+	font-size: 1em;
+	font-weight: bold;
+	width: 8em;
+	background-color: #1F83F9;
+  color: #fff;
+	border-radius: 0.5em;
+	outline: none;
+	cursor: pointer;
+
+}
+
+
+/* suiteeeeeeeeeeee*/
+
+.carte {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.cache {
+  background-color: #CCC;
+  width: 100px;
+  height: 100px;
+  backface-visibility: hidden;
+}
+
+.cache:hover {
+  background-color: rgb(96, 96, 96);
+}
+
+.image {
+  background-image: url('../images/cards.png');
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  backface-visibility: hidden;
+  transform: rotateY( 180deg );
+}
+
+.invisible {
+  display: none;
+}
+
+.carte.flipped {
+  transform: rotateY( 180deg );
+}
+
+.timer {
+  margin-top: 3em;
+  width: auto;
+  height: 2em;
+  border: 1px solid black;
+}
+
+.progressBar {
+  background-color: blue;
+  width: 0;
+  height: 100%;
 }
