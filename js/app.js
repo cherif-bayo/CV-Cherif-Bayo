@@ -177,7 +177,7 @@ var app = {
     // Je gère juste un petit cas CSS pour que l'affichage
     // soit correct quand on est en "hard". J'aurais pu le
     // gérer avec des classes, mais je suis une feignasse !
-    if (app.hardMode) $('#containerMemory').css('width', '990px');
+    if (app.hardMode || app.normalMode) $('#containerMemory').css('width', 'auto');
   },
 
   // Génère un tableau contenant les chiffres de
