@@ -75,7 +75,7 @@ var app = {
         // Quand le délais est arrivé à expiration,
         // je me contente d'afficher un message et
         // je raffraichis la page
-        window.alert("Vous avez perduuuuuuuuuu !");
+        window.alert("Vous avez perduuuuuuuuuu ! Avez trouvé " +app.cardMatch+ " Paires.");
         window.location.reload();
       });
   },
