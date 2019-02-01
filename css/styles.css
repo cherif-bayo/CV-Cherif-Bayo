@@ -132,6 +132,9 @@ h2 {
   width: 0;
   height: 100%;
 }
+.mySlides {
+  display:none;
+}
 
 /** MediaQueries *****/
 
