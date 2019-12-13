@@ -40,7 +40,7 @@
 					<p><i class="fab fa-php fa-fw w3-margin-right w3-large w3-text-blue"></i>Php Laravel - Symfony</p>
           <p><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-blue"></i>Bordeaux, FR</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>bayo.mcherif@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>+33 783767441</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>+33 78685692</p>
           <hr>
           <p class="technologies"><b><i class="fas fa-tools fa-fw w3-text-blue"></i><i class="fa fa-laptop w3-margin-right fa-fw w3-text-blue"></i>Technologies</b></p>
 
@@ -58,7 +58,7 @@
 						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
 						<div class="w3-light-grey hidden"  id="connaissanceJquery">
 							<div id="myBarJ" class="w3-container w3-center w3-round-xlarge w3-green">
-	              <div class="w3-center w3-text-white">80%</div>
+	              <div class="w3-center w3-text-white">90%</div>
 	            </div>
 						</div>
 				  </div>
@@ -68,7 +68,7 @@
 						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
 						<div class="w3-light-grey hidden"  id="connaissancePhp">
 							<div id="myBarP" class="w3-container w3-center w3-round-xlarge w3-green">
-	              <div class="w3-center w3-text-white">85%</div>
+	              <div class="w3-center w3-text-white">90%</div>
 	            </div>
 						</div>
 				  </div>
@@ -78,7 +78,16 @@
 						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
 						<div class="w3-light-grey hidden"  id="connaissancePhpLaravel">
 							<div id="myBarPLaravel" class="w3-container w3-center w3-round-xlarge w3-amber">
-	              <div class="w3-center w3-text-white">75%</div>
+	              <div class="w3-center w3-text-white">80%</div>
+	            </div>
+						</div>
+					</div>
+					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="movePSymfony()"  id="phpSymfonyBal">
+				    <p>PHP/Symfony</p>
+						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+						<div class="w3-light-grey hidden"  id="connaissancePhpLaravel">
+							<div id="myBarPLaravel" class="w3-container w3-center w3-round-xlarge w3-amber">
+	              <div class="w3-center w3-text-white">70%</div>
 	            </div>
 						</div>
 				  </div>
@@ -87,7 +96,7 @@
 						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
 						<div class="w3-light-grey hidden"  id="connaissanceSql">
 							<div id="myBarSql" class="w3-container w3-center w3-round-xlarge w3-orange">
-	              <div class="w3-center w3-text-white">55%</div>
+	              <div class="w3-center w3-text-white">70%</div>
 	            </div>
 						</div>
 				  </div>
@@ -96,7 +105,7 @@
 						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
 						<div class="w3-light-grey hidden"  id="connaissanceVue">
 							<div id="myBarVue" class="w3-container w3-center w3-round-xlarge w3-red">
-	              <div class="w3-center w3-text-white">25%</div>
+	              <div class="w3-center w3-text-white">40%</div>
 	            </div>
 						</div>
 				  </div>
@@ -437,7 +446,7 @@ function movePLaravel() {
   var width = 1;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 75) {
+    if (width >= 80) {
       clearInterval(id);
     } else {
       width++;
@@ -447,12 +456,27 @@ function movePLaravel() {
 }
 </script>
 <script>
+	function movePSymfony() {
+		var elem = document.getElementById("myBarPLaravel");
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 70) {
+				clearInterval(id);
+			} else {
+				width++;
+				elem.style.width = width + '%';
+			}
+		}
+	}
+	</script>
+<script>
 function moveSql() {
   var elem = document.getElementById("myBarSql");
   var width = 1;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 55) {
+    if (width >= 70) {
       clearInterval(id);
     } else {
       width++;
@@ -467,7 +491,7 @@ function moveVue() {
   var width = 1;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 25) {
+    if (width >= 40) {
       clearInterval(id);
     } else {
       width++;
