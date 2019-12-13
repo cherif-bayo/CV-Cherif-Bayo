@@ -6,7 +6,7 @@ html,body,h1,h2,h3,h4,h5,h6 {
 .hidden{
   display: none;
 }
-#htmlBal, #jqueryBal, #phpBal, #phpLaravelBal, #sqlBal, #vueBal{
+#htmlBal, #jqueryBal, #phpBal, #phpLaravelBal, #phpSymfonyBal #sqlBal, #vueBal{
   cursor: pointer;
 }
 .langues, .technologies{
