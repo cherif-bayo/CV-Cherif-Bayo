@@ -33,6 +33,7 @@ var app = {
     $('#jqueryBal').on('click', app.hideJqueryBal);
     $('#phpBal').on('click', app.hidePhpBal);
     $('#phpLaravelBal').on('click', app.hidePhpLaravelBal);
+    $('#phpSymfonyBal').on('click', app.hidePhpSymfonyBal);
     $('#sqlBal').on('click', app.hideSqlBal);
     $('#vueBal').on('click', app.hideVueBal);
     $('.memoryFE').on('click', app.toggleCarret);
@@ -353,6 +354,9 @@ var app = {
   },
   hidePhpLaravelBal: function(){
     $('#connaissancePhpLaravel').fadeIn(2000);
+  },
+  hidePhpSymfonyBal: function(){
+    $('#connaissancePhpSymfony').fadeIn(2000);
   },
   hideSqlBal: function(){
     $('#connaissanceSql').fadeIn(2000);
