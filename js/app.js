@@ -40,6 +40,10 @@ var app = {
     $('.echequierFE').on('click', app.toggleCarretEchequier);
     $('.boutiqueFE').on('click', app.toggleCarretBoutique);
     $('.todolistFS').on('click', app.toggleCarretTodolist);
+    $('.addinsoftFS').on('click', app.toggleCarretAddinsoft);
+    $('.projetpersoOneFS').on('click', app.toggleCarretProjetPersoOne);
+    $('.projetpersoTwoFS').on('click', app.toggleCarretProjetPersoTwo);
+    
     $('.oquizFS').on('click', app.toggleCarretOquiz);
     $('.partageFS').on('click', app.toggleCarretPartage);
 
@@ -383,6 +387,22 @@ var app = {
     // console.log('change moi');
     $('.todolistD').toggle();
     $('.todolistU').toggle();
+  },
+  toggleCarretProjetPersoOne: function(){
+    // console.log('change moi');
+    $('.projetpersoOneD').toggle();
+    $('.projetpersoOneU').toggle();
+  },
+  toggleCarretProjetPersoTwo: function(){
+    // console.log('change moi');
+    $('.projetpersoTwoD').toggle();
+    $('.projetpersoTwoU').toggle();
+  },
+  
+  toggleCarretAddinsoft: function(){
+    // console.log('change moi');
+    $('.addinsonftD').toggle();
+    $('.addinsonftU').toggle();
   },
   toggleCarretOquiz: function(){
     // console.log('change moi');
