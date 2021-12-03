@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Cherif Bayo CV</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
@@ -7,9 +8,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+		crossorigin="anonymous">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+		crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,279 +29,462 @@
 </head>
 
 <body class="w3-light-grey">
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-  <!-- The Grid -->
-  <div class="w3-row-padding w3-cell-row" id="contentpage">
-    <!-- Left Column -->
-    <div class="w3-animate-top w3-third w3-mobile" id="leftpage">
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="images/photo-cv.jpeg" style="width:100%" alt="photocherif">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2 class="w3-text-blue">Cherif Bayo</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-					<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Developpeur web & web mobile</p>
-					<p><i class="fab fa-php fa-fw w3-margin-right w3-large w3-text-blue"></i>Php Laravel - Symfony</p>
-          <p><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-blue"></i>Bordeaux, FR</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>bayo.mcherif@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>+33 78685692</p>
-          <hr>
-          <p class="technologies"><b><i class="fas fa-tools fa-fw w3-text-blue"></i><i class="fa fa-laptop w3-margin-right fa-fw w3-text-blue"></i>Technologies</b></p>
-
-				  <div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="move()"  id="htmlBal">
-				    <p>HTML5 & CSS3</p>
-						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-						<div class="w3-light-grey hidden"  id="connaissanceHtml">
-							<div id="myBar" class="w3-container w3-center w3-round-xlarge w3-green">
-	              <div class="w3-center w3-text-white">95%</div>
-	            </div>
-						</div>
-				  </div>
-					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveJ()"  id="jqueryBal">
-				    <p>Javascript/Jquery</p>
-						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-						<div class="w3-light-grey hidden"  id="connaissanceJquery">
-							<div id="myBarJ" class="w3-container w3-center w3-round-xlarge w3-green">
-	              <div class="w3-center w3-text-white">90%</div>
-	            </div>
-						</div>
-				  </div>
-
-					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveP()"  id="phpBal">
-				    <p>PHP/POO/MVC</p>
-						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-						<div class="w3-light-grey hidden"  id="connaissancePhp">
-							<div id="myBarP" class="w3-container w3-center w3-round-xlarge w3-green">
-	              <div class="w3-center w3-text-white">90%</div>
-	            </div>
-						</div>
-				  </div>
-
-					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="movePLaravel()"  id="phpLaravelBal">
-				    <p>PHP/Laravel</p>
-						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-						<div class="w3-light-grey hidden"  id="connaissancePhpLaravel">
-							<div id="myBarPLaravel" class="w3-container w3-center w3-round-xlarge w3-amber">
-	              <div class="w3-center w3-text-white">80%</div>
-	            </div>
+	<!-- Page Container -->
+	<div class="w3-content w3-margin-top" style="max-width:1400px;">
+		<!-- The Grid -->
+		<div class="w3-row-padding w3-cell-row" id="contentpage">
+			<!-- Left Column -->
+			<div class="w3-animate-top w3-third w3-mobile" id="leftpage">
+				<div class="w3-white w3-text-grey w3-card-4">
+					<div class="w3-display-container">
+						<img src="images/photo-cv.jpeg" style="width:100%" alt="photocherif">
+						<div class="w3-display-bottomleft w3-container w3-text-black">
+							<h2 class="w3-text-blue">Cherif Bayo</h2>
 						</div>
 					</div>
-					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="movePSymfony()"  id="phpSymfonyBal">
-				    <p>PHP/Symfony</p>
-						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-						<div class="w3-light-grey hidden"  id="connaissancePhpSymfony">
-							<div id="myBarPSymfony" class="w3-container w3-center w3-round-xlarge w3-amber">
-	              <div class="w3-center w3-text-white">70%</div>
-	            </div>
-						</div>
-				  </div>
-					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveSql()"  id="sqlBal">
-				    <p>SQL</p>
-						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-						<div class="w3-light-grey hidden"  id="connaissanceSql">
-							<div id="myBarSql" class="w3-container w3-center w3-round-xlarge w3-orange">
-	              <div class="w3-center w3-text-white">70%</div>
-	            </div>
-						</div>
-				  </div>
-					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveVue()"  id="vueBal">
-				    <p>Vue.JS</p>
-						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-						<div class="w3-light-grey hidden"  id="connaissanceVue">
-							<div id="myBarVue" class="w3-container w3-center w3-round-xlarge w3-red">
-	              <div class="w3-center w3-text-white">40%</div>
-	            </div>
-						</div>
-				  </div>
-          <br>
+					<div class="w3-container">
+						<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Developpeur
+							web & web mobile</p>
+						<p><i class="fab fa-php fa-fw w3-margin-right w3-large w3-text-blue"></i>Php
+							Laravel - Symfony</p>
+						<p><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-blue"></i>Bordeaux,
+							FR</p>
+						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>bayo.mcherif@gmail.com
+						</p>
+						<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>+33
+							78685692</p>
+						<hr>
+						<p class="technologies"><b><i
+									class="fas fa-tools fa-fw w3-text-blue"></i><i
+									class="fa fa-laptop w3-margin-right fa-fw w3-text-blue"></i>Technologies</b>
+						</p>
 
-          <p class=" w3-text-theme langues"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Langues</b></p>
-          <p class="anglais">Anglais</p>
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="move()" id="htmlBal">
+							<p>HTML5 & CSS3</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissanceHtml">
+								<div id="myBar"
+									class="w3-container w3-center w3-round-xlarge w3-green">
+									<div class="w3-center w3-text-white">95%</div>
+								</div>
+							</div>
+						</div>
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="moveJ()" id="jqueryBal">
+							<p>Javascript/Jquery</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissanceJquery">
+								<div id="myBarJ"
+									class="w3-container w3-center w3-round-xlarge w3-green">
+									<div class="w3-center w3-text-white">90%</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="moveP()" id="phpBal">
+							<p>PHP/POO/MVC</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissancePhp">
+								<div id="myBarP"
+									class="w3-container w3-center w3-round-xlarge w3-green">
+									<div class="w3-center w3-text-white">90%</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="movePLaravel()" id="phpLaravelBal">
+							<p>PHP/Laravel</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissancePhpLaravel">
+								<div id="myBarPLaravel"
+									class="w3-container w3-center w3-round-xlarge w3-amber">
+									<div class="w3-center w3-text-white">80%</div>
+								</div>
+							</div>
+						</div>
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="movePSymfony()" id="phpSymfonyBal">
+							<p>PHP/Symfony</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissancePhpSymfony">
+								<div id="myBarPSymfony"
+									class="w3-container w3-center w3-round-xlarge w3-amber">
+									<div class="w3-center w3-text-white">70%</div>
+								</div>
+							</div>
+						</div>
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="moveSql()" id="sqlBal">
+							<p>SQL</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissanceSql">
+								<div id="myBarSql"
+									class="w3-container w3-center w3-round-xlarge w3-orange">
+									<div class="w3-center w3-text-white">70%</div>
+								</div>
+							</div>
+						</div>
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="moveVue()" id="vueBal">
+							<p>Vue.JS</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissanceVue">
+								<div id="myBarVue"
+									class="w3-container w3-center w3-round-xlarge w3-red">
+									<div class="w3-center w3-text-white">40%</div>
+								</div>
+							</div>
+						</div>
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="moveVue()" id="vueBal">
+							<p>Salesforce Administrator</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissanceVue">
+								<div id="myBarVue"
+									class="w3-container w3-center w3-round-xlarge w3-red">
+									<div class="w3-center w3-text-white">70%</div>
+								</div>
+							</div>
+						</div>
+						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
+							onclick="moveVue()" id="vueBal">
+							<p>Salesforce Developer</p>
+							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+							<div class="w3-light-grey hidden" id="connaissanceVue">
+								<div id="myBarVue"
+									class="w3-container w3-center w3-round-xlarge w3-red">
+									<div class="w3-center w3-text-white">70%</div>
+								</div>
+							</div>
+						</div>
+						<br>
+
+						<p class=" w3-text-theme langues"><b><i
+									class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Langues</b>
+						</p>
+						<p class="anglais">Anglais</p>
 						<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
-	            <div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:70%">Ecrit</div>
-	          </div>
+							<div class="w3-round-xlarge w3-blue w3-center"
+								style="height:24px;width:70%">Ecrit</div>
+						</div>
 						<div class="w3-light-grey w3-round-xlarge">
-	            <div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:75%">Parler</div>
-	          </div>
+							<div class="w3-round-xlarge w3-blue w3-center"
+								style="height:24px;width:75%">Parler</div>
+						</div>
 
 						<p class="anglais">Espagnol</p>
-							<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
-								<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:30%">Ecrit</div>
-							</div>
-							<div class="w3-light-grey w3-round-xlarge">
-								<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:35%">Parler</div>
-							</div>
-          <br>
-					<p class=" w3-text-theme langues"><b><i class="fas fa-thumbs-up fa-fw w3-margin-right w3-text-blue"></i>Loisirs</b></p>
-					<p class="voyagebal"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i  class="fas fa-plane-departure fa-fw 	w3-margin-right w3-text-blue"></i>
-						<span title="Pays & villes" data-toggle="popover" data-trigger="hover" data-content="USA(New York - Miami - Washington -Philadelphie - Newark). Pologne - Allemagne - Pays-bas - Luxembourg " class=" w3-display-container voyage">Voyager
+						<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
+							<div class="w3-round-xlarge w3-blue w3-center"
+								style="height:24px;width:30%">Ecrit</div>
+						</div>
+						<div class="w3-light-grey w3-round-xlarge">
+							<div class="w3-round-xlarge w3-blue w3-center"
+								style="height:24px;width:35%">Parler</div>
+						</div>
+						<br>
+						<p class=" w3-text-theme langues"><b><i
+									class="fas fa-thumbs-up fa-fw w3-margin-right w3-text-blue"></i>Loisirs</b>
+						</p>
+						<p class="voyagebal"><i
+								class="fas fa-arrow-circle-right w3-margin-right"></i><i
+								class="fas fa-plane-departure fa-fw 	w3-margin-right w3-text-blue"></i>
+							<span title="Pays & villes" data-toggle="popover"
+								data-trigger="hover"
+								data-content="USA(New York - Miami - Washington -Philadelphie - Newark). Pologne - Allemagne - Pays-bas - Luxembourg "
+								class=" w3-display-container voyage">Voyager
 
-						</span></p>
-					<p class="natation"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i class="fas fa-swimmer fa-fw w3-margin-right w3-text-blue"></i> Natation</p>
-					<p class="football"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i class="fas fa-futbol fa-fw w3-margin-right w3-text-blue"></i> Football</p>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird w3-cell w3-mobile">
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Expériences professionnelles</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Développeur Web & Web Mobile / XLSTAT By Addinsoft</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 - <span class="w3-tag w3-blue w3-round">Aujourd'hui</span></h6>
-					<p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Développeur Web Fullstack Php (Symfony).</p>
-					<p><i class="fas fa-globe w3-margin-right"></i><a href="https://www.xlstat.com">www.xlstat.com</a></p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Assistant Ressources Humaines /<span class="efs">é</span>tablissement Français du sang</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mai 2012 - Juillet 2012</h6>
-          <p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Recrutement, gestion de la paie et du personnel.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Technicien qualifié de production / <span class="efs">é</span>tablissement Français du sang</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2009 - Juin 2013</h6>
-          <p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Réception et traitement des poches de sang issues de la transfusion sanguine. </p><br>
-        </div>
-      </div>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-book-reader fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Formation</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Développeur web & web mobile / O'clock<i class="fas fa-rocket w3-margin-left w3-text-blue"></i></b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fev 2018 - Juil 2018</h6>
-          <p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Certification titre professionnelle Niveau 3 équivalent Bac + 2</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Ressources Humaines / Université de Lorraine</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2013</h6>
-          <p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Ressources humaines</p><br>
-        </div>
-      </div>
-
-			<div class="w3-container w3-card w3-white w3-margin-bottom">
-				<h2 class="w3-text-grey w3-padding-16"><i class="fas fa-check-circle fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> Projets réalisés</h2>
-				<div class="w3-container">
-          <h5 class="w3-opacity"><b>Développement Full-stack / Addinsoft</b></h5>
-					<div class="accordion" id="accordionExample">
-							<div class="card">
-								<div class="card-header" id="headingOne">
-									<h2 class="mb-0">
-										<button class="btn btn-link addinsoftFS" type="button" data-toggle="collapse" data-target="#collapseOneAD" aria-expanded="true" aria-controls="collapseOneAD">
-											Participation à la Réalisation du site commercial <i class="fas fa-caret-down addinsonftD mr-5"></i><i class="fas fa-caret-up addinsonftU mr-5 hidden"></i>
-										</button>
-									</h2>
-								</div>
-								<div id="collapseOneAD" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-									<div class="card-body">
-											<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/CSS/JS/PHP Symfony avec twig templating engine .
-											<p class="mt-3">
-											<i class="fas fa-globe w3-margin-right"></i><a href="https://www.xlstat.com">www.xlstat.com</a></<i>
-												Intégration statique, intégration twig, MVC .
-											</p>
-									</div>
-								</div>
-							</div>
+							</span>
+						</p>
+						<p class="natation"><i
+								class="fas fa-arrow-circle-right w3-margin-right"></i><i
+								class="fas fa-swimmer fa-fw w3-margin-right w3-text-blue"></i>
+							Natation</p>
+						<p class="football"><i
+								class="fas fa-arrow-circle-right w3-margin-right"></i><i
+								class="fas fa-futbol fa-fw w3-margin-right w3-text-blue"></i>
+							Football</p>
 					</div>
-          <p></p>
-          <hr>
+				</div><br>
+
+				<!-- End Left Column -->
+			</div>
+
+			<!-- Right Column -->
+			<div class="w3-twothird w3-cell w3-mobile">
+				<div class="w3-container w3-card w3-white w3-margin-bottom">
+					<h2 class="w3-text-grey w3-padding-16"><i
+							class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Expériences
+						professionnelles</h2>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Développeur Web & Web Mobile / XLSTAT By
+								Addinsoft</b></h5>
+						<h6 class="w3-text-blue"><i
+								class="fa fa-calendar fa-fw w3-margin-right"></i>March
+							2019 - <span class="w3-tag w3-blue w3-round">Aujourd'hui</span>
+						</h6>
+						<p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Développeur
+							Web Fullstack Php (Symfony).</p>
+						<p><i class="fas fa-globe w3-margin-right"></i><a
+								href="https://www.xlstat.com">www.xlstat.com</a></p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Assistant Ressources Humaines /<span
+									class="efs">é</span>tablissement Français du
+								sang</b></h5>
+						<h6 class="w3-text-blue"><i
+								class="fa fa-calendar fa-fw w3-margin-right"></i>Mai
+							2012 - Juillet 2012</h6>
+						<p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Recrutement,
+							gestion de la paie et du personnel.</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Technicien qualifié de production / <span
+									class="efs">é</span>tablissement Français du
+								sang</b></h5>
+						<h6 class="w3-text-blue"><i
+								class="fa fa-calendar fa-fw w3-margin-right"></i>Jan
+							2009 - Juin 2013</h6>
+						<p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Réception et
+							traitement des poches de sang issues de la transfusion sanguine.
+						</p><br>
+					</div>
 				</div>
-				<div class="w3-container">
-          <h5 class="w3-opacity"><b>Développement Full-stack / Projets personnels</b></h5>
-					<div class="accordion" id="accordionExample">
-							<div class="card">
-								<div class="card-header" id="headingOne">
-									<h2 class="mb-0">
-										<button class="btn btn-link projetpersoOneFS" type="button" data-toggle="collapse" data-target="#collapseOnePP" aria-expanded="true" aria-controls="collapseOnePP">
-											Réalisation d'un site d'e-commerce <i class="fas fa-caret-down projetpersoOneD mr-5"></i><i class="fas fa-caret-up projetpersoOneU mr-5 hidden"></i>
-										</button>
-									</h2>
-								</div>
-								<div id="collapseOnePP" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-									<div class="card-body">
-											<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/CSS/JS/PHP Laravel avec Blade templating engine .
-											<p class="mt-3">
-												Intégration statique, intégration Blade, Eloquent, MVC .
-											</p>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" id="headingOne">
-									<h2 class="mb-0">
-										<button class="btn btn-link projetpersoTwoFS" type="button" data-toggle="collapse" data-target="#collapseTwoPP" aria-expanded="true" aria-controls="collapseTwoPP">
-											Réalisation d'une application de ticketing <i class="fas fa-caret-down projetpersoTwoD mr-5"></i><i class="fas fa-caret-up projetpersoTwoU mr-5 hidden"></i>
-										</button>
-									</h2>
-								</div>
-								<div id="collapseTwoPP" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-									<div class="card-body">
-											<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/CSS/JS/PHP Laravel avec Blade templating engine .
-											<p class="mt-3">
-												Intégration statique, intégration Blade, Eloquent, MVC .
-											</p>
-									</div>
-								</div>
-							</div>
-
+				<div class="w3-container w3-card w3-white w3-margin-bottom">
+					<h2 class="w3-text-grey w3-padding-16"><i
+							class="fas fa-book-reader fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Formation
+					</h2>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Développeur web & web mobile / O'clock<i
+									class="fas fa-rocket w3-margin-left w3-text-blue"></i></b>
+						</h5>
+						<h6 class="w3-text-blue"><i
+								class="fa fa-calendar fa-fw w3-margin-right"></i>Fev
+							2018 - Juil 2018</h6>
+						<p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Certification
+							titre professionnelle Niveau 3 équivalent Bac + 2</p>
+						<hr>
 					</div>
-          <p></p>
-          <hr>
-        </div>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Ressources Humaines / Université de
+								Lorraine</b></h5>
+						<h6 class="w3-text-blue"><i
+								class="fa fa-calendar fa-fw w3-margin-right"></i>2008 -
+							2013</h6>
+						<p><i class="fas fa-arrow-circle-right w3-margin-right"></i>Ressources
+							humaines</p><br>
+					</div>
+				</div>
 
-
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Développement Front End / O'clock</b></h5>
-					<div class="accordion" id="accordionExample">
+				<div class="w3-container w3-card w3-white w3-margin-bottom">
+					<h2 class="w3-text-grey w3-padding-16"><i
+							class="fas fa-check-circle fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+						Projets réalisés</h2>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Développement Full-stack / Addinsoft</b></h5>
+						<div class="accordion" id="accordionExample">
 							<div class="card">
 								<div class="card-header" id="headingOne">
 									<h2 class="mb-0">
-										<button class="btn btn-link collapsed memoryFE" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-											Memory JS <i class="fas fa-caret-down memoryD mr-5"></i><i class="fas fa-caret-up memoryU mr-5 hidden"></i>
+										<button class="btn btn-link addinsoftFS"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseOneAD"
+											aria-expanded="true"
+											aria-controls="collapseOneAD">
+											Participation à la Réalisation
+											du site commercial <i
+												class="fas fa-caret-down addinsonftD mr-5"></i><i
+												class="fas fa-caret-up addinsonftU mr-5 hidden"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseOneAD" class="collapse"
+									aria-labelledby="headingOne"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/CSS/JS/PHP Symfony avec twig
+										templating engine .
+										<p class="mt-3">
+											<i
+												class="fas fa-globe w3-margin-right"></i><a
+												href="https://www.xlstat.com">www.xlstat.com</a>
+											</<i>
+											Intégration statique,
+											intégration twig, MVC .
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p></p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Développement Full-stack / Projets
+								personnels</b></h5>
+						<div class="accordion" id="accordionExample">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h2 class="mb-0">
+										<button class="btn btn-link projetpersoOneFS"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseOnePP"
+											aria-expanded="true"
+											aria-controls="collapseOnePP">
+											Réalisation d'un site
+											d'e-commerce <i
+												class="fas fa-caret-down projetpersoOneD mr-5"></i><i
+												class="fas fa-caret-up projetpersoOneU mr-5 hidden"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseOnePP" class="collapse"
+									aria-labelledby="headingOne"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/CSS/JS/PHP Laravel avec Blade
+										templating engine .
+										<p class="mt-3">
+											Intégration statique,
+											intégration Blade, Eloquent, MVC
+											.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h2 class="mb-0">
+										<button class="btn btn-link projetpersoTwoFS"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseTwoPP"
+											aria-expanded="true"
+											aria-controls="collapseTwoPP">
+											Réalisation d'une application de
+											ticketing <i
+												class="fas fa-caret-down projetpersoTwoD mr-5"></i><i
+												class="fas fa-caret-up projetpersoTwoU mr-5 hidden"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseTwoPP" class="collapse"
+									aria-labelledby="headingOne"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/CSS/JS/PHP Laravel avec Blade
+										templating engine .
+										<p class="mt-3">
+											Intégration statique,
+											intégration Blade, Eloquent, MVC
+											.
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<p></p>
+						<hr>
+					</div>
+
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Développement Front End / O'clock</b></h5>
+						<div class="accordion" id="accordionExample">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h2 class="mb-0">
+										<button class="btn btn-link collapsed memoryFE"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseOne"
+											aria-expanded="true"
+											aria-controls="collapseOne">
+											Memory JS <i
+												class="fas fa-caret-down memoryD mr-5"></i><i
+												class="fas fa-caret-up memoryU mr-5 hidden"></i>
 										</button>
 									</h2>
 								</div>
 
-								<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div id="collapseOne" class="collapse"
+									aria-labelledby="headingOne"
+									data-parent="#accordionExample">
 									<div class="card-body">
-											<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/CSS/JS .
-											<p class="mt-3">Le but est de coder un mini-jeu.
-												Des cartes sont disposées face cachée à l'écran .
-												Le joueur doit cliquer sur deux cartes. Si celles-ci sont identiques, la paire est validée. Sinon, les cartes sont retournées face cachée, et le joueur doit sélectionner une nouvelle paire de cartes.
-												Le joueur gagne s'il arrive à découvrir toutes les paires avant la fin du temps imparti.
-											</p>
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/CSS/JS .
+										<p class="mt-3">Le but est de coder un
+											mini-jeu.
+											Des cartes sont disposées face
+											cachée à l'écran .
+											Le joueur doit cliquer sur deux
+											cartes. Si celles-ci sont
+											identiques, la paire est
+											validée. Sinon, les cartes sont
+											retournées face cachée, et le
+											joueur doit sélectionner une
+											nouvelle paire de cartes.
+											Le joueur gagne s'il arrive à
+											découvrir toutes les paires
+											avant la fin du temps imparti.
+										</p>
 
-											<a href="memory.html">
-												<div class="w3-tag w3-round w3-blue w3-display-bottomright w3-container mb-2 ml-2 w3-button" style="padding:3px">
-												  <div class="w3-tag w3-round w3-blue w3-border w3-border-white ">
-												    Voir ce projet
-												  </div>
+										<a href="memory.html">
+											<div class="w3-tag w3-round w3-blue w3-display-bottomright w3-container mb-2 ml-2 w3-button"
+												style="padding:3px">
+												<div
+													class="w3-tag w3-round w3-blue w3-border w3-border-white ">
+													Voir ce projet
 												</div>
-											</a>
+											</div>
+										</a>
 									</div>
 								</div>
 							</div>
 							<div class="card">
 								<div class="card-header" id="headingTwo">
 									<h2 class="mb-0">
-										<button class="btn btn-link collapsed echequierFE" type="button" data-toggle="collapse" data-target="#collapseTwoFE" aria-expanded="false" aria-controls="collapseTwo">
-											 Echiquier <i class="fas fa-caret-down echequierU mr-5 "></i><i class="fas fa-caret-up echequierD mr-5 hidden"></i>
+										<button class="btn btn-link collapsed echequierFE"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseTwoFE"
+											aria-expanded="false"
+											aria-controls="collapseTwo">
+											Echiquier <i
+												class="fas fa-caret-down echequierU mr-5 "></i><i
+												class="fas fa-caret-up echequierD mr-5 hidden"></i>
 										</button>
 									</h2>
 								</div>
-								<div id="collapseTwoFE" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div id="collapseTwoFE" class="collapse"
+									aria-labelledby="headingTwo"
+									data-parent="#accordionExample">
 									<div class="card-body">
-										<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/CSS/JS .
-										<p class="mt-3"> l'objectif est de construire un échiquier en JS.
-											créer directement en JS les éléments permettant de créer les 64 cases de l'échiquier.
-											rajouter des classes à ces éléments pour faire des cases de couleurs différentes.
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/CSS/JS .
+										<p class="mt-3"> l'objectif est de
+											construire un échiquier en JS.
+											créer directement en JS les
+											éléments permettant de créer les
+											64 cases de l'échiquier.
+											rajouter des classes à ces
+											éléments pour faire des cases de
+											couleurs différentes.
 										</p>
 									</div>
 								</div>
@@ -302,35 +492,65 @@
 							<div class="card">
 								<div class="card-header" id="headingThree">
 									<h2 class="mb-0">
-										<button class="btn btn-link collapsed boutiqueFE" type="button" data-toggle="collapse" data-target="#collapseThreeFE" aria-expanded="false" aria-controls="collapseThree">
-											Boutique en ligne <i class="fas fa-caret-down  boutiqueU mr-5"></i><i class="fas fa-caret-up boutiqueD mr-5 hidden"></i>
+										<button class="btn btn-link collapsed boutiqueFE"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseThreeFE"
+											aria-expanded="false"
+											aria-controls="collapseThree">
+											Boutique en ligne <i
+												class="fas fa-caret-down  boutiqueU mr-5"></i><i
+												class="fas fa-caret-up boutiqueD mr-5 hidden"></i>
 										</button>
 									</h2>
 								</div>
-								<div id="collapseThreeFE" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div id="collapseThreeFE" class="collapse"
+									aria-labelledby="headingThree"
+									data-parent="#accordionExample">
 									<div class="card-body">
-										<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/CSS.
-										<p class="mt-3"> Objectif: Concevoir la page 'sélection' d'une boutique.</p>
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/CSS.
+										<p class="mt-3"> Objectif: Concevoir la
+											page 'sélection' d'une boutique.
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="card">
 								<div class="card-header" id="headingThree">
 									<h2 class="mb-0">
-										<button class="btn btn-link collapsed wireframeFE" type="button" data-toggle="collapse" data-target="#collapseFourFE" aria-expanded="false" aria-controls="collapseThree">
-											Wireframing <i class="fas fa-caret-down  wireframeU mr-5"></i><i class="fas fa-caret-up wireframeD mr-5 hidden"></i>
+										<button class="btn btn-link collapsed wireframeFE"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseFourFE"
+											aria-expanded="false"
+											aria-controls="collapseThree">
+											Wireframing <i
+												class="fas fa-caret-down  wireframeU mr-5"></i><i
+												class="fas fa-caret-up wireframeD mr-5 hidden"></i>
 										</button>
 									</h2>
 								</div>
-								<div id="collapseFourFE" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div id="collapseFourFE" class="collapse"
+									aria-labelledby="headingThree"
+									data-parent="#accordionExample">
 									<div class="card-body">
-										<i class="fas fa-arrow-circle-right w3-margin-right"></i> Web Design
-										<p class="mt-3"> Réalisation des wireframes à partir d'un cahier des charges</p>
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										Web Design
+										<p class="mt-3"> Réalisation des
+											wireframes à partir d'un cahier
+											des charges</p>
 
 										<a href="wireframe.html">
-											<div class="w3-tag w3-round w3-blue w3-display-bottomright w3-container mb-2 ml-2 w3-button" style="padding:3px">
-												<div class="w3-tag w3-round w3-blue w3-border w3-border-white " >
-													Voir un extrait d'un  projet en cours
+											<div class="w3-tag w3-round w3-blue w3-display-bottomright w3-container mb-2 ml-2 w3-button"
+												style="padding:3px">
+												<div
+													class="w3-tag w3-round w3-blue w3-border w3-border-white ">
+													Voir un extrait
+													d'un projet en
+													cours
 												</div>
 											</div>
 										</a>
@@ -338,43 +558,73 @@
 								</div>
 							</div>
 						</div>
-          <p></p>
-          <hr>
-        </div>
-				<div class="w3-container">
-          <h5 class="w3-opacity"><b>Développement Full-stack / O'clock</b></h5>
-					<div class="accordion" id="accordionExample">
+						<p></p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Développement Full-stack / O'clock</b></h5>
+						<div class="accordion" id="accordionExample">
 							<div class="card">
 								<div class="card-header" id="headingOne">
 									<h2 class="mb-0">
-										<button class="btn btn-link todolistFS" type="button" data-toggle="collapse" data-target="#collapseOneFS" aria-expanded="true" aria-controls="collapseOneFS">
-											Todo List <i class="fas fa-caret-down todolistD mr-5"></i><i class="fas fa-caret-up todolistU mr-5 hidden"></i>
+										<button class="btn btn-link todolistFS"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseOneFS"
+											aria-expanded="true"
+											aria-controls="collapseOneFS">
+											Todo List <i
+												class="fas fa-caret-down todolistD mr-5"></i><i
+												class="fas fa-caret-up todolistU mr-5 hidden"></i>
 										</button>
 									</h2>
 								</div>
 
-								<div id="collapseOneFS" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div id="collapseOneFS" class="collapse"
+									aria-labelledby="headingOne"
+									data-parent="#accordionExample">
 									<div class="card-body">
-											<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/CSS/JS/PHP .
-											<p class="mt-3">
-												Manipulation du DOM, connaissance du CRUD en PHP et templating .
-											</p>
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/CSS/JS/PHP .
+										<p class="mt-3">
+											Manipulation du DOM,
+											connaissance du CRUD en PHP et
+											templating .
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="card">
 								<div class="card-header" id="headingTwo">
 									<h2 class="mb-0">
-										<button class="btn btn-link collapsed oquizFS" type="button" data-toggle="collapse" data-target="#collapseTwoFS" aria-expanded="false" aria-controls="collapseTwo">
-											O'Quiz <i class="fas fa-caret-down oquizU mr-5 "></i><i class="fas fa-caret-up oquizD mr-5 hidden"></i>
+										<button class="btn btn-link collapsed oquizFS"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseTwoFS"
+											aria-expanded="false"
+											aria-controls="collapseTwo">
+											O'Quiz <i
+												class="fas fa-caret-down oquizU mr-5 "></i><i
+												class="fas fa-caret-up oquizD mr-5 hidden"></i>
 										</button>
 									</h2>
 								</div>
-								<div id="collapseTwoFS" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div id="collapseTwoFS" class="collapse"
+									aria-labelledby="headingTwo"
+									data-parent="#accordionExample">
 									<div class="card-body">
-										<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/CSS/JS/PHP -> POO avec le modèle MVC .
-										<p class="mt-3">est une application simple de quiz..
-											Développer une interface utilisateur, développer des composants d’accès aux données, développer des pages web en lien avec une base de données.
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/CSS/JS/PHP -> POO avec le modèle
+										MVC .
+										<p class="mt-3">est une application
+											simple de quiz..
+											Développer une interface
+											utilisateur, développer des
+											composants d’accès aux données,
+											développer des pages web en lien
+											avec une base de données.
 										</p>
 									</div>
 								</div>
@@ -382,248 +632,283 @@
 							<div class="card">
 								<div class="card-header" id="headingThree">
 									<h2 class="mb-0">
-										<button class="btn btn-link collapsed partageFS" type="button" data-toggle="collapse" data-target="#collapseThreeFS" aria-expanded="false" aria-controls="collapseThree">
-											Partage ton Book <i class="fas fa-caret-down partageU mr-5 "></i><i class="fas fa-caret-up partageD mr-5 hidden"></i>
+										<button class="btn btn-link collapsed partageFS"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseThreeFS"
+											aria-expanded="false"
+											aria-controls="collapseThree">
+											Partage ton Book <i
+												class="fas fa-caret-down partageU mr-5 "></i><i
+												class="fas fa-caret-up partageD mr-5 hidden"></i>
 										</button>
 									</h2>
 								</div>
-								<div id="collapseThreeFS" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div id="collapseThreeFS" class="collapse"
+									aria-labelledby="headingThree"
+									data-parent="#accordionExample">
 									<div class="card-body">
-										<i class="fas fa-arrow-circle-right w3-margin-right"></i> HTML/SCSS/JS/WORDPRESS .
-										<p class="mt-3">Réalisation d'un projet en équipe.
-											Création d'un thème avec utilisation du builder Brunch et Composer pour les dépendances et le tout intégré à <i class="fab fa-wordpress w3-xlarge w3-text-blue"></i>
+										<i
+											class="fas fa-arrow-circle-right w3-margin-right"></i>
+										HTML/SCSS/JS/WORDPRESS .
+										<p class="mt-3">Réalisation d'un projet
+											en équipe.
+											Création d'un thème avec
+											utilisation du builder Brunch et
+											Composer pour les dépendances et
+											le tout intégré à <i
+												class="fab fa-wordpress w3-xlarge w3-text-blue"></i>
 										</p>
 									</div>
 								</div>
 							</div>
-							</div>
-          <p></p>
-          <hr>
-        </div>
-      </div>
-			<div class="w3-container w3-card w3-white ">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-spinner w3-spin fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> Projets en cours</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Al........e.fr</b> You wanna see this project ? come back here in <span id="timerDateSortie" class="w3-text-blue"></span></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2020 - <span class="w3-tag w3-blue w3-round">Loading</span></h6>
-          <p>Projet réalisé en Laravel</p>
-          <hr>
-        </div>
+						</div>
+						<p></p>
+						<hr>
+					</div>
+				</div>
+				<div class="w3-container w3-card w3-white ">
+					<h2 class="w3-text-grey w3-padding-16"><i
+							class="fa fa-spinner w3-spin fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+						Projets en cours</h2>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Al........e.fr</b> You wanna see this project
+							? come back here in <span id="timerDateSortie"
+								class="w3-text-blue"></span></h5>
+						<h6 class="w3-text-blue"><i
+								class="fa fa-calendar fa-fw w3-margin-right"></i>Oct
+							2020 - <span class="w3-tag w3-blue w3-round">Loading</span></h6>
+						<p>Projet réalisé en Laravel</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>s.........k.fr</b> You wanna see this project
+							? come back here in <span id="timerDateSortieS"
+								class="w3-text-blue"></span></h5>
+						<h6 class="w3-text-blue"><i
+								class="fa fa-calendar fa-fw w3-margin-right"></i>June
+							2020 - <span class="w3-tag w3-blue w3-round">Loading</span></h6>
+						<p>Projet réalisé avec le framework Laravel (Php) pour le back et Vue.JS
+							pour le front</p>
+						<hr>
+					</div>
+				</div>
+				<!-- End Right Column -->
+			</div>
+			<!-- End Grid -->
+		</div>
+		<!-- End Page Container -->
+	</div>
+
+	<footer class="w3-container w3-blue w3-center w3-margin-top">
+		<p>Retrouvez moi sur les réseaux sociaux</p>
+		<a href="#" onclick="document.getElementById('id01').style.display='block'"><i
+				class="fa fa-facebook-official w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+		<div id="id01" class="w3-modal">
+			<div class="w3-modal-content w3-animate-zoom w3-card-4">
+				<header class="w3-container w3-blue">
+					<span onclick="document.getElementById('id01').style.display='none'"
+						class="w3-button w3-display-topright">&times;</span>
+					<h2>You are curious !!!</h2>
+				</header>
 				<div class="w3-container">
-          <h5 class="w3-opacity"><b>s.........k.fr</b> You wanna see this project ? come back here in <span id="timerDateSortieS" class="w3-text-blue"></span></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2020 - <span class="w3-tag w3-blue w3-round">Loading</span></h6>
-          <p>Projet réalisé avec le framework Laravel (Php) pour le back et Vue.JS pour le front</p>
-          <hr>
-        </div>
-      </div>
-    <!-- End Right Column -->
-    </div>
-  <!-- End Grid -->
-  </div>
-  <!-- End Page Container -->
-</div>
+					<p class="w3-text-black">That's great but nothing important to see on my
+						facebook page !! </p>
+					<p class="w3-text-black">
+						<i
+							class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+						<i
+							class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+						<i
+							class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+					</p>
+				</div>
+				<footer class="w3-container w3-blue">
+					<p>See you on Twitter or linkedin </p>
+				</footer>
+			</div>
+		</div>
+		</div>
+		<a href="https://twitter.com/GOOD_BAYO" target="_blank"><i
+				class="fa fa-twitter  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+		<a href="https://www.linkedin.com/in/mohamed-cherif-bayo-2084a9153" target="_blank"><i
+				class="fa fa-linkedin  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+		<p>&copy; Cherif BayoDev. All rights reserved. </p>
+	</footer>
 
-<footer class="w3-container w3-blue w3-center w3-margin-top">
-  <p>Retrouvez moi sur les réseaux sociaux</p>
-  <a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-facebook-official w3-text-white w3-hover-opacity w3-xlarge"></i></a>
-	<div id="id01" class="w3-modal">
-	 <div class="w3-modal-content w3-animate-zoom w3-card-4">
-		 <header class="w3-container w3-blue">
-			 <span onclick="document.getElementById('id01').style.display='none'"
-			 class="w3-button w3-display-topright">&times;</span>
-			 <h2>You are curious !!!</h2>
-		 </header>
-		 <div class="w3-container">
-			 <p class="w3-text-black">That's great but nothing important to see on my facebook page !! </p>
-			 <p class="w3-text-black">
-				 <i class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
-				 <i class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
-				 <i class="fas fa-smile-wink fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
-			 </p>
-		 </div>
-		 <footer class="w3-container w3-blue">
-			 <p>See you on Twitter or linkedin </p>
-		 </footer>
-	 </div>
- </div>
-</div>
-  <a href="https://twitter.com/GOOD_BAYO" target="_blank"><i class="fa fa-twitter  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
-  <a href="https://www.linkedin.com/in/mohamed-cherif-bayo-2084a9153" target="_blank"><i class="fa fa-linkedin  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
-  <p>&copy; Cherif BayoDev. All rights reserved. </p>
-</footer>
+	<script type="text/javascript" src="js/app.js">
 
-<script type="text/javascript" src="js/app.js">
+	</script>
 
-</script>
-
-<script>
-function move() {
-  var elem = document.getElementById("myBar");
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 95) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-</script>
-<script>
-function moveJ() {
-  var elem = document.getElementById("myBarJ");
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 80) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-</script>
-<script>
-function moveP() {
-  var elem = document.getElementById("myBarP");
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 80) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-</script>
-
-<script>
-function movePLaravel() {
-  var elem = document.getElementById("myBarPLaravel");
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 80) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-</script>
-<script>
-	function movePSymfony() {
-		var elem = document.getElementById("myBarPSymfony");
-		var width = 1;
-		var id = setInterval(frame, 10);
-		function frame() {
-			if (width >= 70) {
-				clearInterval(id);
-			} else {
-				width++;
-				elem.style.width = width + '%';
+	<script>
+		function move() {
+			var elem = document.getElementById("myBar");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 95) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
 			}
 		}
-	}
-</script>
-<script>
-function moveSql() {
-  var elem = document.getElementById("myBarSql");
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 70) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-</script>
-<script>
-function moveVue() {
-  var elem = document.getElementById("myBarVue");
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 40) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-    }
-  }
-}
-</script>
+	</script>
+	<script>
+		function moveJ() {
+			var elem = document.getElementById("myBarJ");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 80) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+	</script>
+	<script>
+		function moveP() {
+			var elem = document.getElementById("myBarP");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 80) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+	</script>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Apr 30, 2020 18:00:00").getTime();
+	<script>
+		function movePLaravel() {
+			var elem = document.getElementById("myBarPLaravel");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 80) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+	</script>
+	<script>
+		function movePSymfony() {
+			var elem = document.getElementById("myBarPSymfony");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 70) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+	</script>
+	<script>
+		function moveSql() {
+			var elem = document.getElementById("myBarSql");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 70) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+	</script>
+	<script>
+		function moveVue() {
+			var elem = document.getElementById("myBarVue");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 40) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+	</script>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Apr 30, 2020 18:00:00").getTime();
 
-  // Get todays date and time
-  var now = new Date().getTime();
+		// Update the count down every 1 second
+		var x = setInterval(function () {
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+			// Get todays date and time
+			var now = new Date().getTime();
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
 
-  // Output the result in an element with id="demo"
-  document.getElementById("timerDateSortie").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timerDateSortie").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+			// Output the result in an element with id="demo"
+			document.getElementById("timerDateSortie").innerHTML = days + "d " + hours + "h "
+				+ minutes + "m " + seconds + "s ";
 
-<script>
-// Set the date we're counting down to
-var countDownDateS = new Date("Oct 01, 2020 18:00:00").getTime();
+			// If the count down is over, write some text
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("timerDateSortie").innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+	<script>
+		// Set the date we're counting down to
+		var countDownDateS = new Date("Oct 01, 2020 18:00:00").getTime();
 
-  // Get todays date and time
-  var now = new Date().getTime();
+		// Update the count down every 1 second
+		var x = setInterval(function () {
 
-  // Find the distance between now and the count down date
-  var distance = countDownDateS - now;
+			// Get todays date and time
+			var now = new Date().getTime();
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			// Find the distance between now and the count down date
+			var distance = countDownDateS - now;
 
-  // Output the result in an element with id="demo"
-  document.getElementById("timerDateSortieS").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timerDateSortieS").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+			// Output the result in an element with id="demo"
+			document.getElementById("timerDateSortieS").innerHTML = days + "d " + hours + "h "
+				+ minutes + "m " + seconds + "s ";
+
+			// If the count down is over, write some text
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("timerDateSortieS").innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
 
 </body>
+
 </html>
