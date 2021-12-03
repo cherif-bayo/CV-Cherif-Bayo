@@ -36,6 +36,8 @@ var app = {
     $('#phpSymfonyBal').on('click', app.hidePhpSymfonyBal);
     $('#sqlBal').on('click', app.hideSqlBal);
     $('#vueBal').on('click', app.hideVueBal);
+    $('#salesforceAdminBal').on('click', app.hideSalesforceAdminBal);
+    $('#salesforceDevBal').on('click', app.hideSalesforceDevBal);
     $('.memoryFE').on('click', app.toggleCarret);
     $('.echequierFE').on('click', app.toggleCarretEchequier);
     $('.boutiqueFE').on('click', app.toggleCarretBoutique);
@@ -367,6 +369,12 @@ var app = {
   },
   hideVueBal: function(){
     $('#connaissanceVue').fadeIn(2000);
+  },
+  hideSalesforceAdminBal: function(){
+    $('#salesforceAdmin').fadeIn(2000);
+  },
+  hideSalesforceDevBal: function(){
+    $('#salesforceDev').fadeIn(2000);
   },
   toggleCarret: function(){
     // console.log('change moi');

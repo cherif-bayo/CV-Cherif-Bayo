@@ -139,24 +139,24 @@
 							</div>
 						</div>
 						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="moveVue()" id="vueBal">
+							onclick="moveSalesforceAdmin()" id="salesforceAdminBal">
 							<p>Salesforce Administrator</p>
 							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
 							<div class="w3-light-grey hidden" id="salesforceAdmin">
-								<div id="myBarVue"
-									class="w3-container w3-center w3-round-xlarge w3-red">
-									<div class="w3-center w3-text-white">70%</div>
+								<div id="myBarSalesforceAdmin"
+									class="w3-container w3-center w3-round-xlarge w3-orange">
+									<div class="w3-center w3-text-white">75%</div>
 								</div>
 							</div>
 						</div>
 						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="moveVue()" id="vueBal">
+							onclick="moveSalesforceDev()" id="salesforceDevBal">
 							<p>Salesforce Developer</p>
 							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
 							<div class="w3-light-grey hidden" id="salesforceDev">
-								<div id="myBarVue"
-									class="w3-container w3-center w3-round-xlarge w3-red">
-									<div class="w3-center w3-text-white">70%</div>
+								<div id="myBarSalesforceDev"
+									class="w3-container w3-center w3-round-xlarge w3-orange">
+									<div class="w3-center w3-text-white">75%</div>
 								</div>
 							</div>
 						</div>
@@ -838,6 +838,36 @@
 			var id = setInterval(frame, 10);
 			function frame() {
 				if (width >= 40) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+	</script>
+	<script>
+		function moveSalesforceAdmin() {
+			var elem = document.getElementById("myBarSalesforceAdmin");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 75) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+	</script>
+	<script>
+		function moveSalesforceDev() {
+			var elem = document.getElementById("myBarSalesforceDev");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 75) {
 					clearInterval(id);
 				} else {
 					width++;
