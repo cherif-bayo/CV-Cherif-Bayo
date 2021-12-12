@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cherif Bayo CV</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="w3-light-grey">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <!-- The Grid -->
+  <div class="w3-row-padding w3-cell-row" id="contentpage">
+    <!-- Left Column -->
+    <div class="w3-animate-top w3-third w3-mobile" id="leftpage">
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/photo-cv.jpeg" style="width:100%" alt="photocherif">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2 class="w3-text-blue">Cherif Bayo</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Developpeur web & web mobile</p>
+          <p><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-blue"></i>Bordeaux, FR</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>bayo.mcherif@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>+33 783767441</p>
+          <hr>
+          <p class="technologies"><b><i class="fas fa-tools fa-fw w3-text-blue"></i><i class="fa fa-laptop w3-margin-right fa-fw w3-text-blue"></i>Technologies</b></p>
+
+				  <div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="move()"  id="htmlBal">
+				    <p>HTML5 & CSS3</p>
+						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+						<div class="w3-light-grey hidden"  id="connaissanceHtml">
+							<div id="myBar" class="w3-container w3-center w3-round-xlarge w3-green">
+	              <div class="w3-center w3-text-white">95%</div>
+	            </div>
+						</div>
+				  </div>
+					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveJ()"  id="jqueryBal">
+				    <p>Javascript/Jquery</p>
+						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+						<div class="w3-light-grey hidden"  id="connaissanceJquery">
+							<div id="myBarJ" class="w3-container w3-center w3-round-xlarge w3-green">
+	              <div class="w3-center w3-text-white">80%</div>
+	            </div>
+						</div>
+				  </div>
+
+					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveP()"  id="phpBal">
+				    <p>PHP/POO/MVC</p>
+						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+						<div class="w3-light-grey hidden"  id="connaissancePhp">
+							<div id="myBarP" class="w3-container w3-center w3-round-xlarge w3-green">
+	              <div class="w3-center w3-text-white">85%</div>
+	            </div>
+						</div>
+				  </div>
+
+					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="movePLaravel()"  id="phpLaravelBal">
+				    <p>PHP/Laravel</p>
+						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+						<div class="w3-light-grey hidden"  id="connaissancePhpLaravel">
+							<div id="myBarPLaravel" class="w3-container w3-center w3-round-xlarge w3-amber">
+	              <div class="w3-center w3-text-white">45%</div>
+	            </div>
+						</div>
+				  </div>
+					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveSql()"  id="sqlBal">
+				    <p>SQL</p>
+						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+						<div class="w3-light-grey hidden"  id="connaissanceSql">
+							<div id="myBarSql" class="w3-container w3-center w3-round-xlarge w3-orange">
+	              <div class="w3-center w3-text-white">55%</div>
+	            </div>
+						</div>
+				  </div>
+					<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white" onclick="moveVue()"  id="vueBal">
+				    <p>Vue.JS</p>
+						<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
+						<div class="w3-light-grey hidden"  id="connaissanceVue">
+							<div id="myBarVue" class="w3-container w3-center w3-round-xlarge w3-red">
+	              <div class="w3-center w3-text-white">10%</div>
+	            </div>
+						</div>
+				  </div>
+          <br>
+
+          <p class=" w3-text-theme langues"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Langues</b></p>
+          <p class="anglais">Anglais</p>
+						<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
+	            <div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:70%">Ecrit</div>
+	          </div>
+						<div class="w3-light-grey w3-round-xlarge">
+	            <div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:75%">Parler</div>
+	          </div>
+
+						<p class="anglais">Espagnol</p>
+							<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
+								<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:30%">Ecrit</div>
+							</div>
+							<div class="w3-light-grey w3-round-xlarge">
+								<div class="w3-round-xlarge w3-blue w3-center" style="height:24px;width:35%">Parler</div>
+							</div>
+          <br>
+					<p class=" w3-text-theme langues"><b><i class="fas fa-thumbs-up fa-fw w3-margin-right w3-text-blue"></i>Loisirs</b></p>
+					<p class="voyagebal"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i  class="fas fa-plane-departure fa-fw 	w3-margin-right w3-text-blue"></i>
+						<span title="Pays & villes" data-toggle="popover" data-trigger="hover" data-content="USA(New York - Miami - Washington -Philadelphie - Newark). Pologne - Allemagne - Pays-bas - Luxembourg " class=" w3-display-container voyage">Voyager
+
+						</span></p>
+					<p class="natation"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i class="fas fa-swimmer fa-fw w3-margin-right w3-text-blue"></i> Natation</p>
+					<p class="football"><i class="fas fa-arrow-circle-right w3-margin-right"></i><i class="fas fa-futbol fa-fw w3-margin-right w3-text-blue"></i> Football</p>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird w3-cell w3-mobile ">
+      <div class="w3-container">
+        <h2>Extrait wireframe de projet en cours</h2>
+        <p>Wireframe réalisé à partir d'un cahier des charges.</p>
+        </div>
+
+        <div class="w3-content" style="max-width:800px">
+        <img class="mySlides" src="images/capturew1.jpg" style="width:100%">
+        <img class="mySlides" src="images/capturew2.jpg" style="width:100%">
+        <img class="mySlides" src="images/capturew3.jpg" style="width:100%">
+        <img class="mySlides" src="images/capturew4.jpg" style="width:100%">
+        <img class="mySlides" src="images/capturew5.jpg" style="width:100%">
+      </div>
+        <div class="w3-center">
+        <div class="w3-section">
+          <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Previous</button>
+          <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+        <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+        <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+        <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+        <button class="w3-button demo" onclick="currentDiv(4)">4</button>
+        <button class="w3-button demo" onclick="currentDiv(5)">5</button>
+      </div>
+      <a href="index_en.html">
+        <div class="w3-tag w3-round w3-blue  w3-container mb-2 ml-2 w3-button" style="padding:3px">
+          <div class="w3-tag w3-round w3-blue w3-border w3-border-white ">
+            Back to home
+          </div>
+        </div>
+      </a>
+
+
+
+    <!-- End Right Column -->
+    </div>
+  <!-- End Grid -->
+  </div>
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-blue w3-center w3-margin-top">
+  <p>Find me on the social media</p>
+  
+  <a href="https://twitter.com/GOOD_BAYO" target="_blank"><i class="fa fa-twitter  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+  <a href="https://www.linkedin.com/in/mohamed-cherif-bayo-2084a9153" target="_blank"><i class="fa fa-linkedin  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
+  <p>&copy; Cherif BayoDev. All rights reserved. </p>
+</footer>
+
+<script type="text/javascript" src="js/app.js">
+
+</script>
+
+<script>
+function move() {
+  var elem = document.getElementById("myBar");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 95) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+<script>
+function moveJ() {
+  var elem = document.getElementById("myBarJ");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 80) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+<script>
+function moveP() {
+  var elem = document.getElementById("myBarP");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 80) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+
+<script>
+function movePLaravel() {
+  var elem = document.getElementById("myBarPLaravel");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 45) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+<script>
+function moveSql() {
+  var elem = document.getElementById("myBarSql");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 55) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+<script>
+function moveVue() {
+  var elem = document.getElementById("myBarVue");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 10) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-blue", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-blue";
+}
+</script>
+
+
+
+
+
+</body>
+</html>
