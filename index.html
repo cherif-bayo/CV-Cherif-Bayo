@@ -575,9 +575,7 @@
 		<p>&copy; <script>document.write(new Date().getFullYear());</script> Cherif BayoDev. All rights reserved. </p>
 	</footer>
 
-	<script type="text/javascript" src="js/app.js">
-
-	</script>
+	<script type="text/javascript" src="js/app.js"></script>
 
 	<script>
 		function move() {
@@ -593,11 +591,6 @@
 				}
 			}
 		}
-	</script>
-	<script>
-	$(function() {
-		$('.left_side').load('/side.html'); 
-	});
 	</script>
 	<script>
 		function moveJ() {
@@ -629,7 +622,11 @@
 			}
 		}
 	</script>
-
+	<script>
+		$(function() {
+			$('.left_side').load('/side.html'); 
+		});
+	</script>
 	<script>
 		function movePLaravel() {
 			var elem = document.getElementById("myBarPLaravel");
