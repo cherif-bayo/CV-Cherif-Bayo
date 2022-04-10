@@ -43,7 +43,7 @@
 		<!-- The Grid -->
 		<div class="w3-row-padding w3-cell-row" id="contentpage">
 			<!-- Left Column -->
-			<div class="w3-animate-top w3-third w3-mobile left_side_en" id="leftpage">
+			<div class="w3-animate-top w3-third w3-mobile" id="leftpage_en">
 				<!-- Calling side_en.html here -->
 				<!-- End Left Column -->
 			</div>
@@ -530,12 +530,11 @@
 				}
 			}
 		}
-	</script>
-	<script>
 		$(function() {
-			$('.left_side_en').load('/side_en.html'); 
+			$('#leftpage_en').load('side_en.html'); 
 		});
 	</script>
+	
 	<script>
 		function moveJ() {
 			var elem = document.getElementById("myBarJ");
