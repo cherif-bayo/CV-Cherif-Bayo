@@ -36,7 +36,7 @@
   <!-- The Grid -->
   <div class="w3-row-padding w3-cell-row" id="contentpage">
     <!-- Left Column -->
-    <div class="w3-animate-top w3-third w3-mobile left_side" id="leftpage">
+    <div class="w3-animate-top w3-third w3-mobile" id="leftpage">
       
 
     <!-- End Left Column -->
@@ -131,11 +131,9 @@ function move() {
     }
   }
 }
-</script>
-<script>
-	$(function() {
-		$('.left_side').load('/side.html'); 
-	});
+$(function() {
+  $('#leftpage').load('side.html'); 
+});
 </script>
 <script>
 function moveJ() {
