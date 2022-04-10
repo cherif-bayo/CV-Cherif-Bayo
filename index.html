@@ -593,6 +593,11 @@
 		}
 	</script>
 	<script>
+	$(function() {
+		$('.left_side').load('/side.html'); 
+	});
+	</script>
+	<script>
 		function moveJ() {
 			var elem = document.getElementById("myBarJ");
 			var width = 1;
@@ -622,11 +627,7 @@
 			}
 		}
 	</script>
-	<script>
-		$(function() {
-			$('.left_side').load('/side.html'); 
-		});
-	</script>
+
 	<script>
 		function movePLaravel() {
 			var elem = document.getElementById("myBarPLaravel");
