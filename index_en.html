@@ -43,182 +43,8 @@
 		<!-- The Grid -->
 		<div class="w3-row-padding w3-cell-row" id="contentpage">
 			<!-- Left Column -->
-			<div class="w3-animate-top w3-third w3-mobile" id="leftpage">
-				<div class="w3-white w3-text-grey w3-card-4">
-					<div class="w3-display-container">
-						<img src="images/photo-cv.jpeg" style="width:100%" alt="photocherif">
-						<div class="w3-display-bottomleft w3-container w3-text-black">
-							<h2 class="w3-text-blue">Chérif Bayo</h2>
-						</div>
-					</div>
-					<div class="w3-container">
-						<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Web developer & web mobile</p>
-						<p><i class="fab fa-php fa-fw w3-margin-right w3-large w3-text-blue"></i>Php
-							Laravel - Symfony</p>
-						<p><i class="fa fa-cloud fa-fw fa-spin w3-margin-right w3-large w3-text-blue"></i>Salesforce
-							Admin - Developer</p>
-						<p><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-blue"></i>Bordeaux,
-							FR</p>
-						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>bayo.mcherif@gmail.com
-						</p>
-						<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>+33
-							769298625 / (403) 909-5034</p>
-						<hr>
-						<p class="technologies"><b><i
-									class="fas fa-tools fa-fw w3-text-blue"></i><i
-									class="fa fa-laptop w3-margin-right fa-fw w3-text-blue"></i>Technologies</b>
-						</p>
-
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="move()" id="htmlBal">
-							<p>HTML5 & CSS3</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="connaissanceHtml">
-								<div id="myBar"
-									class="w3-container w3-center w3-round-xlarge w3-green">
-									<div class="w3-center w3-text-white">95%</div>
-								</div>
-							</div>
-						</div>
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="moveJ()" id="jqueryBal">
-							<p>Javascript/Jquery</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="connaissanceJquery">
-								<div id="myBarJ"
-									class="w3-container w3-center w3-round-xlarge w3-green">
-									<div class="w3-center w3-text-white">90%</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="moveP()" id="phpBal">
-							<p>PHP/POO/MVC</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="connaissancePhp">
-								<div id="myBarP"
-									class="w3-container w3-center w3-round-xlarge w3-green">
-									<div class="w3-center w3-text-white">90%</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="movePLaravel()" id="phpLaravelBal">
-							<p>PHP/Laravel</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="connaissancePhpLaravel">
-								<div id="myBarPLaravel"
-									class="w3-container w3-center w3-round-xlarge w3-amber">
-									<div class="w3-center w3-text-white">80%</div>
-								</div>
-							</div>
-						</div>
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="movePSymfony()" id="phpSymfonyBal">
-							<p>PHP/Symfony</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="connaissancePhpSymfony">
-								<div id="myBarPSymfony"
-									class="w3-container w3-center w3-round-xlarge w3-amber">
-									<div class="w3-center w3-text-white">70%</div>
-								</div>
-							</div>
-						</div>
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="moveSql()" id="sqlBal">
-							<p>SQL</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="connaissanceSql">
-								<div id="myBarSql"
-									class="w3-container w3-center w3-round-xlarge w3-orange">
-									<div class="w3-center w3-text-white">70%</div>
-								</div>
-							</div>
-						</div>
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="moveVue()" id="vueBal">
-							<p>Vue.JS</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="connaissanceVue">
-								<div id="myBarVue"
-									class="w3-container w3-center w3-round-xlarge w3-red">
-									<div class="w3-center w3-text-white">40%</div>
-								</div>
-							</div>
-						</div>
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="moveSalesforceAdmin()" id="salesforceAdminBal">
-							<p>Salesforce Administrator</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="salesforceAdmin">
-								<div id="myBarSalesforceAdmin"
-									class="w3-container w3-center w3-round-xlarge w3-orange">
-									<div class="w3-center w3-text-white">75%</div>
-								</div>
-							</div>
-						</div>
-						<div class="w3-panel w3-round-xxlarge w3-blue w3-text-white"
-							onclick="moveSalesforceDev()" id="salesforceDevBal">
-							<p>Salesforce Developer</p>
-							<i class="fas fa-hand-pointer fa-fw w3-text-white"></i>
-							<div class="w3-light-grey hidden" id="salesforceDev">
-								<div id="myBarSalesforceDev"
-									class="w3-container w3-center w3-round-xlarge w3-orange">
-									<div class="w3-center w3-text-white">75%</div>
-								</div>
-							</div>
-						</div>
-						<br>
-
-						<p class=" w3-text-theme langues"><b><i
-									class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b>
-						</p>
-						<p class="anglais">English</p>
-						<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
-							<div class="w3-round-xlarge w3-blue w3-center"
-								style="height:24px;width:70%">Writing</div>
-						</div>
-						<div class="w3-light-grey w3-round-xlarge">
-							<div class="w3-round-xlarge w3-blue w3-center"
-								style="height:24px;width:75%">Speaking</div>
-						</div>
-
-						<p class="anglais">Spanish</p>
-						<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
-							<div class="w3-round-xlarge w3-blue w3-center"
-								style="height:24px;width:30%">Writing</div>
-						</div>
-						<div class="w3-light-grey w3-round-xlarge">
-							<div class="w3-round-xlarge w3-blue w3-center"
-								style="height:24px;width:35%">Speaking</div>
-						</div>
-						<br>
-						<p class=" w3-text-theme langues"><b><i
-									class="fas fa-thumbs-up fa-fw w3-margin-right w3-text-blue"></i>Hobbies</b>
-						</p>
-						<p class="voyagebal"><i
-								class="fas fa-arrow-circle-right w3-margin-right"></i><i
-								class="fas fa-plane-departure fa-fw 	w3-margin-right w3-text-blue"></i>
-							<span title="Pays & villes" data-toggle="popover"
-								data-trigger="hover"
-								data-content="USA(New York - Miami - Washington -Philadelphie - Newark). Pologne - Allemagne - Pays-bas - Luxembourg "
-								class=" w3-display-container voyage">Travel
-
-							</span>
-						</p>
-						<p class="natation"><i
-								class="fas fa-arrow-circle-right w3-margin-right"></i><i
-								class="fas fa-swimmer fa-fw w3-margin-right w3-text-blue"></i>
-                                                                Swimming</p>
-						<p class="football"><i
-								class="fas fa-arrow-circle-right w3-margin-right"></i><i
-								class="fas fa-futbol fa-fw w3-margin-right w3-text-blue"></i>
-                                                                Football</p>
-					</div>
-				</div><br>
-
+			<div class="w3-animate-top w3-third w3-mobile left_side_en" id="leftpage">
+				<!-- Calling side_en.html here -->
 				<!-- End Left Column -->
 			</div>
 
@@ -685,12 +511,10 @@
 				class="fa fa-twitter  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
 		<a href="https://www.linkedin.com/in/mohamed-cherif-bayo-2084a9153" target="_blank"><i
 				class="fa fa-linkedin  w3-text-white w3-hover-opacity w3-xlarge"></i></a>
-		<p>&copy; Cherif BayoDev. All rights reserved. </p>
+		<p>&copy; <script>document.write(new Date().getFullYear());</script> Cherif BayoDev. All rights reserved. </p>
 	</footer>
 
-	<script type="text/javascript" src="js/app.js">
-
-	</script>
+	<script type="text/javascript" src="js/app_en.js"></script>
 
 	<script>
 		function move() {
@@ -706,6 +530,11 @@
 				}
 			}
 		}
+	</script>
+	<script>
+		$(function() {
+			$('.left_side_en').load('/side_en.html'); 
+		});
 	</script>
 	<script>
 		function moveJ() {
