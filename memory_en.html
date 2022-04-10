@@ -36,7 +36,7 @@
   <!-- The Grid -->
   <div class="w3-row-padding w3-cell-row" id="contentpage">
     <!-- Left Column -->
-    <div class="w3-animate-top w3-third w3-mobile left_side_en" id="leftpage">
+    <div class="w3-animate-top w3-third w3-mobile" id="leftpage_en">
       
 
     <!-- End Left Column -->
@@ -99,6 +99,9 @@ function move() {
     }
   }
 }
+$(function() {
+  $('#leftpage_en').load('side_en.html'); 
+});
 </script>
 <script>
 function moveJ() {
