@@ -173,3 +173,18 @@
             Football</p>
     </div>
 </div><br>
+<script>
+    function movePSymfony() {
+        var elem = document.getElementById("myBarPSymfony");
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 70) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+            }
+        }
+    }
+</script>
